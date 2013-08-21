@@ -12,7 +12,7 @@ class AwsSnsEndpointGrailsPlugin {
     def author = "Danilo Tuler"
     def authorEmail = "danilo.tuler@ideais.com.br"
     def description = '''\
-This plugin provides a filter and utility class to handle message receiving from Amazon SNS via http.
+This plugin provides a filter to handle message receiving from Amazon SNS via http.
 '''
 
     // URL to the plugin's documentation
@@ -24,7 +24,7 @@ This plugin provides a filter and utility class to handle message receiving from
 //    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "Ideais", url: "http://www.ideais.com.br" ]
 
     // Any additional developers beyond the author specified above.
 //    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
@@ -33,7 +33,7 @@ This plugin provides a filter and utility class to handle message receiving from
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.codehaus.org/grails-plugins/" ]
+    def scm = [ url: "https://github.com/ideais/grails-aws-sns-endpoint" ]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before
