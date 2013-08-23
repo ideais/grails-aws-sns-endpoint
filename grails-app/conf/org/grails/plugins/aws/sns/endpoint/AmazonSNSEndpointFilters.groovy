@@ -49,7 +49,7 @@ class AmazonSNSEndpointFilters {
 					def subscribeUrl = message["SubscribeURL"]
 					def topicArn = message["TopicArn"]
 
-					// call the s
+					// call the subscribeUrl
 					def http = new HTTPBuilder()
 					http.get(subscribeUrl) { resp, xml ->
 						def subscriptionArn = xml.ConfirmSubscriptionResponse.ConfirmSubscriptionResult.SubscriptionArn
